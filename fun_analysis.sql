@@ -1,5 +1,3 @@
--- Objective 4
-
 -- Find the 10 most popular androgynous names
 SELECT Name, COUNT(Distinct Gender) AS num_genders, SUM(Births) AS Total FROM Names
 GROUP BY Name
@@ -11,7 +9,7 @@ LIMIT 10;
 SELECT Name, Births, LENGTH(Name) AS Length
 FROM Names
 ORDER BY Length DESC;
--- max lngth is 15, min length is 2
+-- max length is 15, min length is 2
 
 WITH new_names AS 
 (
