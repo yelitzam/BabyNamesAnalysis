@@ -52,7 +52,6 @@ WHERE Name = "Michael";
 
 
 -- 2) Find the names with the biggest jumps in popularity from the first year of the data set to the last year
--- jessica 44764, jennifer 78346
 WITH names_1980 AS
 	(WITH all_names AS (SELECT Year, Name, SUM(Births) as total FROM names
 	GROUP BY Year, Name)
